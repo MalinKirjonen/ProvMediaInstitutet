@@ -1,4 +1,5 @@
 :root {
+  --hero-text-color: #f3f1eb;
   --primary-text-color: #633f43;
   --primary-color: rgb(160, 119, 119);
   --secondary-color: blanchedalmond;
@@ -14,6 +15,11 @@ footer {
   text-align: center;
   margin-top: 30px;
 }
+h1,
+h3 {
+  color: var(--hero-text-color);
+  text-align: center;
+}
 
 p {
   opacity: 50%;
@@ -21,6 +27,10 @@ p {
   font-size: 14px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 a {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -29,10 +39,30 @@ a:hover {
   color: #b32d5c;
   text-decoration: underline;
 }
+button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  padding: 10px 15px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ebd0b3;
+}
+
 .containerHeroOne {
   display: flex;
   flex-wrap: nowrap;
   border: 1px solid #141518;
+  margin: 30px;
 }
 
 .boxOne,
@@ -53,7 +83,7 @@ a:hover {
 
 .boxOne,
 .boxThree {
-  width: 40%;
+  max-width: 30%;
 }
 
 .link-övning2 {
@@ -63,6 +93,7 @@ a:hover {
 
 .fighter-text {
   font-size: 18px;
+  text-align: center;
 }
 .fighter-text-innehåll {
   font-size: 14px;
@@ -74,6 +105,7 @@ a:hover {
 .row {
   background-color: var(--secondary-color);
 }
+
 @media (max-width: 960px) {
   .containerHeroOne {
     flex-wrap: wrap;
@@ -82,6 +114,8 @@ a:hover {
   .boxTwo,
   .boxThree {
     margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .boxOne,
   .boxThree {
