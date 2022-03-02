@@ -1,27 +1,95 @@
-body {
-  margin: 30px;
-  background-color: blanchedalmond;
+:root {
+  --primary-text-color: #633f43;
+  --primary-color: rgb(160, 119, 119);
+  --secondary-color: blanchedalmond;
 }
 
-.container {
+body {
+  margin-top: 30px;
+  background-color: var(--secondary-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+p {
+  opacity: 50%;
+  line-height: 5;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+a:hover {
+  color: #b32d5c;
+  text-decoration: underline;
+}
+.containerHeroOne {
   display: flex;
   flex-wrap: nowrap;
-  border: 1px solid black;
+  border: 1px solid #141518;
 }
 
 .boxOne,
 .boxTwo,
 .boxThree {
   margin: 30px 10px;
-  border: 1px solid black;
+  border: 1px solid #141518;
   height: 500px;
   width: 100%;
-  background-color: rgb(160, 119, 119);
+  background-color: var(--primary-color);
   color: lavender;
-  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .boxOne,
 .boxThree {
   width: 40%;
+}
+
+.link-övning2 {
+  color: var(--primary-text-color);
+  font-size: 18px;
+}
+
+.fighter-text {
+  font-size: 18px;
+}
+.fighter-text-innehåll {
+  font-size: 14px;
+  line-height: 0;
+}
+.container {
+  background-color: var(--primary-color);
+}
+.row {
+  background-color: var(--secondary-color);
+}
+@media (max-width: 960px) {
+  .containerHeroOne {
+    flex-wrap: wrap;
+  }
+  .boxOne,
+  .boxTwo,
+  .boxThree {
+    margin: 10px;
+  }
+  .boxOne,
+  .boxThree {
+    width: 100%;
+    height: 300px;
+  }
+
+  .skydive-text {
+    margin-bottom: 0px;
+  }
 }
