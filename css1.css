@@ -1,0 +1,7 @@
+.first-box,
+.second-box,
+.third-box,
+.forth-box {
+  border: black;
+  padding: 50px, 50px;
+}
